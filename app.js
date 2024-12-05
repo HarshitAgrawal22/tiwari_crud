@@ -7,7 +7,7 @@ const musicRoutes = require('./routes/music');
 const app = express();
 
 // Database connection
-mongoose.connect('mongodb://localhost:27017/music_db')
+mongoose.connect('mongodb+srv://harsh:Harshit@cluster0.ng24d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error(err));
 

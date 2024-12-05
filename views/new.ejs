@@ -5,13 +5,28 @@
         <title>Add Album</title>
     </head>
     <body>
-        <h1>Add a New Music Album</h1>
-        <form action="/music-album" method="POST">
-            <input type="text" name="musicTitle" placeholder="Title" required>
-            <input type="text" name="artist" placeholder="Artist" required>
-            <input type="text" name="genre" placeholder="Genre" required>
-            <input type="number" name="releaseYear" placeholder="Year" required>
-            <button type="submit">Add Album</button>
-        </form>
+        <div class="container">
+            <h1>Add a New Music Album</h1>
+            <form action="/music-album" method="POST">
+                <label for="musicTitle">Music Title:</label>
+                <input type="text" id="musicTitle" name="musicTitle"
+                    placeholder="Title" required>
+
+                <label for="artist">Artist:</label>
+                <input type="text" id="artist" name="artist"
+                    placeholder="Artist" required>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" placeholder="Genre"
+                    required>
+
+                <label for="releaseYear">Release Year:</label>
+                <input type="number" id="releaseYear" name="releaseYear"
+                    placeholder="Year" required>
+
+                <input type="submit" value="Add Album">
+            </form>
+            <a href="/music-album">Back</a>
+        </div>
     </body>
 </html>

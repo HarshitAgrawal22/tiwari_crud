@@ -1,21 +1,109 @@
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: "Arial", sans-serif;
+  margin: 0;
   padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
   line-height: 1.6;
 }
-h1 {
-  color: #333;
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+h1,
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Navigation links */
 a {
-  display: inline-block;
-  margin: 5px 0;
   text-decoration: none;
-  color: blue;
+  color: #007bff;
+  font-weight: bold;
 }
-button {
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+  background-color: #007bff;
   color: white;
-  background-color: red;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+form {
+  margin: 20px 0;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form label {
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+}
+
+form input[type="submit"] {
+  width: 100%;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+ul li a {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+ul li form {
+  display: inline;
+}
+
+ul li button {
+  background-color: red;
+}
+
+ul li button:hover {
+  background-color: darkred;
 }

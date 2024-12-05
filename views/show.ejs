@@ -5,11 +5,13 @@
         <title><%= album.musicTitle %></title>
     </head>
     <body>
-        <h1><%= album.musicTitle %></h1>
-        <p>Artist: <%= album.artist %></p>
-        <p>Genre: <%= album.genre %></p>
-        <p>Release Year: <%= album.releaseYear %></p>
-        <a href="/music-album/<%= album._id %>/edit">Edit</a>
-        <a href="/music-album">Back</a>
+        <div class="container">
+            <h1><%= album.musicTitle %></h1>
+            <p><strong>Artist:</strong> <%= album.artist %></p>
+            <p><strong>Genre:</strong> <%= album.genre %></p>
+            <p><strong>Release Year:</strong> <%= album.releaseYear %></p>
+            <a href="/music-album/<%= album._id %>/edit">Edit</a>
+            <a href="/music-album">Back</a>
+        </div>
     </body>
 </html>
