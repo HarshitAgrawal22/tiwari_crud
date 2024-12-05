@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+        <title><%= album.musicTitle %></title>
+    </head>
+    <body>
+        <h1><%= album.musicTitle %></h1>
+        <p>Artist: <%= album.artist %></p>
+        <p>Genre: <%= album.genre %></p>
+        <p>Release Year: <%= album.releaseYear %></p>
+        <a href="/music-album/<%= album._id %>/edit">Edit</a>
+        <a href="/music-album">Back</a>
+    </body>
+</html>

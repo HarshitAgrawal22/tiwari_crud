@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  line-height: 1.6;
+}
+h1 {
+  color: #333;
+}
+a {
+  display: inline-block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: blue;
+}
+button {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+}

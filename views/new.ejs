@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+        <title>Add Album</title>
+    </head>
+    <body>
+        <h1>Add a New Music Album</h1>
+        <form action="/music-album" method="POST">
+            <input type="text" name="musicTitle" placeholder="Title" required>
+            <input type="text" name="artist" placeholder="Artist" required>
+            <input type="text" name="genre" placeholder="Genre" required>
+            <input type="number" name="releaseYear" placeholder="Year" required>
+            <button type="submit">Add Album</button>
+        </form>
+    </body>
+</html>
