@@ -19,6 +19,10 @@ app.use(methodOverride('_method'));
 // Set view engine
 app.set('view engine', 'ejs');
 
+app.get("/", (req, res) => {
+    res.redirect("/music-album")
+})
+
 // Routes
 app.use('/music-album', musicRoutes);
 
